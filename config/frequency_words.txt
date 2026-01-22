@@ -149,62 +149,36 @@
 #                    1. 大模型与AI研究
 # ═══════════════════════════════════════════════════════════════
 
-[大模型发布与更新] @3
-/\bgpt[- ]?4|gpt[- ]?5|gpt[- ]?4o/i
-/\bllama\b|meta llama/i
-/\bclaude\b|anthropic|claude[- ]?3/i
-/\bdeepseek[- ]?(coder|v2|r1)?/i
+[大模型发布与更新] 
+/\bAI\b|\bgpt[- ]?4|gpt[- ]?5|gpt[- ]?4o|\bllama\b|meta llama|\bclaude\b|anthropic|claude[- ]?3|\bdeepseek[- ]?(coder|v2|r1)?/i
+@3
 
-[多模态模型] @3
-/sora|视频生成/i
-/文生视频|text[- ]to[- ]video/i
-/runway|gen[- ]?2|pika/i
-/\bDALL[- ]?E|midjourney|stable diffusion/i
+[多模态模型] 
+/sora|视频生成|文生视频|text[- ]to[- ]video|runway|gen[- ]?2|pika|\bDALL[- ]?E|midjourney|stable diffusion/i
+@3
 
-[模型架构与算法] @3
-/transformer|attention mechanism/i
-/moe|mixture of experts/i
-/rlhf|reinforcement learning from human feedback/i
-/retrieval augmented generation|rag/i
+[模型架构与算法] 
+/transformer|attention mechanism|retrieval augmented generation|rag|moe|mixture of experts|rlhf|reinforcement learning from human feedback/i
+@3
 
 # ═══════════════════════════════════════════════════════════════
 #                    2. AI开发工具与框架
 # ═══════════════════════════════════════════════════════════════
 
 
-[AI开发工具链] @3
-/ollama|本地大模型/i
-/vllm|推理加速/i
-/huggingface|transformers库/i
-/langchain|llamaindex/i
-
+[AI开发工具链] 
+/ollama|本地大模型|vllm|推理加速|huggingface|transformers库|langchain|llamaindex/i
+@3
 
 # ═══════════════════════════════════════════════════════════════
 #                    3. 编程与开发
 # ═══════════════════════════════════════════════════════════════
 
-[AI编程助手] @3
-/\bcopilot\b|github copilot/i
-/cursor|ai ide/i
-/\bwindsurf\b|codium/i
-/代码生成|code generation/i
+[AI编程助手]
+/\bcopilot\b|github copilot|cursor|ai ide|\bwindsurf\b|codium|代码生成|code generation/i
+@3
 
 
-# ═══════════════════════════════════════════════════════════════
-#                    6. 前沿研究方向
-# ═══════════════════════════════════════════════════════════════
-
-[AGI与前沿研究] @3
-/\bAGI\b|通用人工智能/i
-/世界模型|world model/i
-/具身智能|embodied ai/i
-/ai for science/i
-
-[优化与效率] @3
-/推理优化|inference optimization/i
-/训练加速|training acceleration/i
-/内存优化|memory optimization/i
-/能耗优化|energy efficiency/i
 
 # ═══════════════════════════════════════════════════════════════
 #                    7. 行业应用与案例
