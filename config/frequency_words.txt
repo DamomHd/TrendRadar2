@@ -171,11 +171,6 @@
 #                    2. AI开发工具与框架
 # ═══════════════════════════════════════════════════════════════
 
-[深度学习框架] @3
-/\bpytorch\b|torch/i
-/\btensorflow\b|tf/i
-/\bjax\b|google jax/i
-/mindspore|昇思/i
 
 [AI开发工具链] @3
 /ollama|本地大模型/i
@@ -183,11 +178,6 @@
 /huggingface|transformers库/i
 /langchain|llamaindex/i
 
-[MLOps与部署] @3
-/mlops|机器学习运维/i
-/模型部署|model deployment/i
-/模型量化|quantization/i
-/边缘ai|edge ai/i
 
 # ═══════════════════════════════════════════════════════════════
 #                    3. 编程与开发
@@ -199,28 +189,6 @@
 /\bwindsurf\b|codium/i
 /代码生成|code generation/i
 
-[软件开发技术] @3
-/rust编程|rust语言/i
-/go语言|golang/i
-/python|python库/i
-/云原生|cloud native/i
-
-
-# ═══════════════════════════════════════════════════════════════
-#                    5. 数据与安全
-# ═══════════════════════════════════════════════════════════════
-
-[数据工程] @3
-/数据清洗|data cleaning/i
-/数据标注|data annotation/i
-/合成数据|synthetic data/i
-/数据集|dataset/i
-
-[AI安全与伦理] @3
-/ai安全|ai security/i
-/提示注入|prompt injection/i
-/数据隐私|data privacy/i
-/可解释ai|explainable ai/i
 
 # ═══════════════════════════════════════════════════════════════
 #                    6. 前沿研究方向
