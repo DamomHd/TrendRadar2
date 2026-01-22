@@ -146,107 +146,109 @@
 [WORD_GROUPS]
 
 # ═══════════════════════════════════════════════════════════════
-#                         企业与品牌
+#                    1. 大模型与AI研究
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+[大模型发布与更新] @3
+/\bgpt[- ]?4|gpt[- ]?5|gpt[- ]?4o/i
+/\bllama\b|meta llama/i
+/\bclaude\b|anthropic|claude[- ]?3/i
+/\bdeepseek[- ]?(coder|v2|r1)?/i
 
-/DeepSeek|梁文锋/i => DeepSeek
+[多模态模型] @3
+/sora|视频生成/i
+/文生视频|text[- ]to[- ]video/i
+/runway|gen[- ]?2|pika/i
+/\bDALL[- ]?E|midjourney|stable diffusion/i
 
-/华为|鸿蒙|HarmonyOS|任正非/i => 华为
-
-/比亚迪|王传福|byd/i => 比亚迪
-
-/大疆|\bDJI\b/i => 大疆
-
-/宇树|王兴兴|Unitree/ => 宇树机器人
-
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
-
-/黑神话|冯骥/ => 黑神话悟空
-
-/影之刃零|梁其伟/ => 影之刃零
-
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-申奥
-
-/京东|刘强东/ => 京东
-
-/字节|bytedance|张一鸣/i => 字节跳动
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克/ => 特斯拉
-
-/英伟达|\bNVIDIA\b|黄仁勋/i => 英伟达
-/\bAMD\b/i => AMD
-
-/微软|\bMicrosoft\b/i => 微软
-/谷歌|\bgoogle\b|\bgemini\b|\bdeepMind\b/i => 谷歌
-/\biphone\b|\bipad\b|\bmac\b|\bios\b/i => 苹果
-
-/\bchatgpt\b|\bopenai\b|\bsora\b/i => OpenAI
-/\bclaude\b|anthropic/i => Claude
-
+[模型架构与算法] @3
+/transformer|attention mechanism/i
+/moe|mixture of experts/i
+/rlhf|reinforcement learning from human feedback/i
+/retrieval augmented generation|rag/i
 
 # ═══════════════════════════════════════════════════════════════
-#                         国家与地区
+#                    2. AI开发工具与框架
 # ═══════════════════════════════════════════════════════════════
 
-[中国]
-国产
-中国
+[深度学习框架] @3
+/\bpytorch\b|torch/i
+/\btensorflow\b|tf/i
+/\bjax\b|google jax/i
+/mindspore|昇思/i
 
-[东亚]
-日本
-朝鲜
-韩国
+[AI开发工具链] @3
+/ollama|本地大模型/i
+/vllm|推理加速/i
+/huggingface|transformers库/i
+/langchain|llamaindex/i
 
-[北美]
-美国
-加拿大
+[MLOps与部署] @3
+/mlops|机器学习运维/i
+/模型部署|model deployment/i
+/模型量化|quantization/i
+/边缘ai|edge ai/i
 
-[西欧]
-法国
-英国
+# ═══════════════════════════════════════════════════════════════
+#                    3. 编程与开发
+# ═══════════════════════════════════════════════════════════════
 
-/俄罗斯|俄国/ => 俄罗斯
+[AI编程助手] @3
+/\bcopilot\b|github copilot/i
+/cursor|ai ide/i
+/\bwindsurf\b|codium/i
+/代码生成|code generation/i
 
-印度
+[软件开发技术] @3
+/rust编程|rust语言/i
+/go语言|golang/i
+/python|python库/i
+/云原生|cloud native/i
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         科技领域
+#                    5. 数据与安全
 # ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
-/(?<![a-zA-Z])ai(?![a-zA-Z])/i
-人工智能
+[数据工程] @3
+/数据清洗|data cleaning/i
+/数据标注|data annotation/i
+/合成数据|synthetic data/i
+/数据集|dataset/i
 
-[芯片]
-芯片
-光刻机
-半导体
+[AI安全与伦理] @3
+/ai安全|ai security/i
+/提示注入|prompt injection/i
+/数据隐私|data privacy/i
+/可解释ai|explainable ai/i
 
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
+# ═══════════════════════════════════════════════════════════════
+#                    6. 前沿研究方向
+# ═══════════════════════════════════════════════════════════════
 
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
+[AGI与前沿研究] @3
+/\bAGI\b|通用人工智能/i
+/世界模型|world model/i
+/具身智能|embodied ai/i
+/ai for science/i
 
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
+[优化与效率] @3
+/推理优化|inference optimization/i
+/训练加速|training acceleration/i
+/内存优化|memory optimization/i
+/能耗优化|energy efficiency/i
 
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
+# ═══════════════════════════════════════════════════════════════
+#                    7. 行业应用与案例
+# ═══════════════════════════════════════════════════════════════
 
-# 前沿科技
-量子
-脑机
-基因
+[企业AI应用] @3
+/企业ai|enterprise ai/i
+/ai中台|ai平台/i
+/智能客服|ai客服/i
 
-# 产业政策
-生产力
+[开发者生态] @3
+/开源模型|open source model/i
+/开源工具|open source tool/i
+/开发者社区|developer community/i
+/技术博客|tech blog/i
