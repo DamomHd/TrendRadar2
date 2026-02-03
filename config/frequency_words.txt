@@ -1,6 +1,10 @@
 # ═══════════════════════════════════════════════════════════════
 #                    TrendRadar 频率词配置文件
+#                         Version: 1.1.0
 # ═══════════════════════════════════════════════════════════════
+
+# 可视化配置编辑器地址: https://sansan0.github.io/TrendRadar/
+#
 # 凡是左侧有 # 的都是仅供阅读的说明性文字
 #
 # 这个文件用来设置你想关注的新闻关键词。
@@ -146,51 +150,60 @@
 [WORD_GROUPS]
 
 # ═══════════════════════════════════════════════════════════════
-#                    1. 大模型与AI研究
+#                         企业与品牌
 # ═══════════════════════════════════════════════════════════════
 
-[大模型发布与更新] 
-/\bAI\b|\bgpt[- ]?4|gpt[- ]?5|gpt[- ]?4o|\bllama\b|meta llama|\bclaude\b|anthropic|claude[- ]?3|\bdeepseek[- ]?(coder|v2|r1)?/i
-@3
+/胖东来|于东来/ => 胖东来
 
-[多模态模型] 
-/sora|视频生成|文生视频|text[- ]to[- ]video|runway|gen[- ]?2|pika|\bDALL[- ]?E|midjourney|stable diffusion/i
-@3
+/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
 
-[模型架构与算法] 
-/transformer|attention mechanism|retrieval augmented generation|rag|moe|mixture of experts|rlhf|reinforcement learning from human feedback/i
-@3
+/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
+
+/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
+
+/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
+
+/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+
+/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
+/众擎|EngineAI|赵同阳/ => 众擎机器人
+
+/黑神话|冯骥/ => 黑神话悟空
+
+/影之刃零|梁其伟/ => 影之刃零
+
+/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
+
+申奥
+
+/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
+
+/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
+
+/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
+
+/qwen|minimax|glm/ => 国产开源模型
+
+/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
+
+/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
+/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
+
+/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
+/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
+/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
+
+/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
+/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+
+
+
 
 # ═══════════════════════════════════════════════════════════════
-#                    2. AI开发工具与框架
+#                         科技领域
 # ═══════════════════════════════════════════════════════════════
 
+[AI 相关]
+/(?<![a-zA-Z])ai(?![a-zA-Z])/
+人工智能
 
-[AI开发工具链] 
-/ollama|本地大模型|vllm|推理加速|huggingface|transformers库|langchain|llamaindex/i
-@3
-
-# ═══════════════════════════════════════════════════════════════
-#                    3. 编程与开发
-# ═══════════════════════════════════════════════════════════════
-
-[AI编程助手]
-/\bcopilot\b|github copilot|cursor|ai ide|\bwindsurf\b|codium|代码生成|code generation/i
-@3
-
-
-
-# ═══════════════════════════════════════════════════════════════
-#                    7. 行业应用与案例
-# ═══════════════════════════════════════════════════════════════
-
-[企业AI应用] @3
-/企业ai|enterprise ai/i
-/ai中台|ai平台/i
-/智能客服|ai客服/i
-
-[开发者生态] @3
-/开源模型|open source model/i
-/开源工具|open source tool/i
-/开发者社区|developer community/i
-/技术博客|tech blog/i
