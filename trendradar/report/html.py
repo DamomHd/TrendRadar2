@@ -1372,12 +1372,12 @@ def render_html_content(
                         GitHub 开源项目
                     </a>"""
 
-    if update_info:
-        html += f"""
-                    <br>
-                    <span style="color: #ea580c; font-weight: 500;">
-                        发现新版本 {update_info['remote_version']}，当前版本 {update_info['current_version']}
-                    </span>"""
+    # if update_info:
+    #     html += f"""
+    #                 <br>
+    #                 <span style="color: #ea580c; font-weight: 500;">
+    #                     发现新版本 {update_info['remote_version']}，当前版本 {update_info['current_version']}
+    #                 </span>"""
 
     html += """
                 </div>
