@@ -58,7 +58,7 @@ def _format_list_content(text: str) -> str:
 def render_ai_analysis_markdown(result: AIAnalysisResult) -> str:
     """渲染为通用 Markdown 格式（Telegram、企业微信、ntfy、Bark、Slack）"""
     if not result.success:
-        return f"⚠️ AI 分析失败: {result.error}"
+        return ""
 
     lines = ["**✨ AI 热点分析**", ""]
 
@@ -83,7 +83,7 @@ def render_ai_analysis_markdown(result: AIAnalysisResult) -> str:
 def render_ai_analysis_feishu(result: AIAnalysisResult) -> str:
     """渲染为飞书卡片 Markdown 格式"""
     if not result.success:
-        return f"⚠️ AI 分析失败: {result.error}"
+        return ""
 
     lines = ["**✨ AI 热点分析**", ""]
 
@@ -108,7 +108,7 @@ def render_ai_analysis_feishu(result: AIAnalysisResult) -> str:
 def render_ai_analysis_dingtalk(result: AIAnalysisResult) -> str:
     """渲染为钉钉 Markdown 格式"""
     if not result.success:
-        return f"⚠️ AI 分析失败: {result.error}"
+        return ""
 
     lines = ["### ✨ AI 热点分析", ""]
 
