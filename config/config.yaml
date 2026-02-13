@@ -50,6 +50,9 @@ platforms:
       name: "抖音"
     - id: "zhihu"
       name: "知乎"
+    - id: "AI tools"
+      name: "AI 工具集"
+    
 
 
 
@@ -100,6 +103,11 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
+
+    - id: "ai-tools"
+      name: "AI工具"
+      url: "https://ai-bot.cn/daily-ai-news/"
+      enabled: true
 
     # 自定义源示例
     # - id: "custom-feed"
